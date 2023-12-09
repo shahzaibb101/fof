@@ -1,0 +1,23 @@
+$desktop: 1280px;
+$tablet: 1024px;
+$mobile: 767px;
+
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (max-width: $desktop) {
+      @content;
+    }
+  }
+  @if $point == tablet {
+    @media (max-width: $tablet) {
+      @content;
+    }
+  } @else if $point == mobile {
+    @media (max-width: $mobile) {
+      @content;
+    }
+  } @else {
+    @error "Invalid breakpoint: #{$point}. Please use 'tablet' or 'mobile'.";
+  }
+}
