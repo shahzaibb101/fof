@@ -21,5 +21,6 @@ from home.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name="home"),
-    path('user-dashboard/', user_dashboard, name="user_dashboard")
+    path('user-dashboard/', user_dashboard, name="user_dashboard"),
+    path('cms/', cms, name="cms")
 ]
