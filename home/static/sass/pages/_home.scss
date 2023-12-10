@@ -1,3 +1,77 @@
+.training-potential {
+  padding: 40px 0;
+
+  .block-wrapper {
+    @include flex-c;
+    flex-wrap: wrap;
+    @include breakpoint(tablet) {
+      justify-content: center;
+    }
+
+    > * {
+      width: 50%;
+      @include breakpoint(tablet) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .image-block {
+      position: relative;
+      @include breakpoint(tablet) {
+        margin-bottom: 2rem;
+      }
+
+      img {
+        position: relative;
+        z-index: 1;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        transform: scale(2);
+        @include breakpoint(tablet) {
+          transform: scale(1);
+        }
+      }
+    }
+
+    .title {
+      max-width: 500px;
+
+      h1 {
+        color: $color-1;
+      }
+    }
+
+    .description {
+      color: $color-7;
+      margin: 20px 0;
+    }
+
+    a {
+      display: inline-block;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      border-radius: 3px;
+      font-size: 1.125rem;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: .5px;
+      background-color: $primary-color;
+      padding: 12px 30px;
+      border: 3px solid $color-4;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+    }
+  }
+}
+
 .analysis-section {
   img {
     width: 100%;
@@ -109,6 +183,78 @@
             color: $color-1;
           }
         }
+      }
+    }
+  }
+}
+
+.team-section {
+  .block-info {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+
+    .title {
+      h1 {
+        color: $color-1;
+      }
+    }
+  }
+
+  .section-padding {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 80px 0;
+    overflow: hidden;
+  }
+
+  .team_slider {
+    .owl-item {
+      .item {
+        transform: translate3d(0, 0, 0); /* DO NOT REMEMBER WHERE TU PUT THIS, SEARCH FOR 3D ACCELERATION */
+        // transform: scale(0.9);
+
+        // transition: all .25s ease-in-out;
+        margin: 50px 0; /* OVERWRITE PLUGIN MARGIN */
+
+        .team {
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+          -webkit-transform: scale(0.80);
+          -ms-transform: scale(0.80);
+          transform: scale(0.80);
+          color: $color-1;
+          filter: grayscale(100%);
+
+          .image {
+            position: relative;
+            margin-bottom: 1rem;
+
+            > img {
+              position: relative;
+              z-index: 2;
+            }
+
+            .overlay {
+              img {
+                position: absolute;
+                bottom: 0;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+
+      &.center .item .team {
+        -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        transform: scale(1.15);
+        filter: grayscale(0%);
       }
     }
   }

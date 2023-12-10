@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -176,6 +180,80 @@ footer .copyright p {
   margin: 0;
 }
 
+.training-potential {
+  padding: 40px 0;
+}
+.training-potential .block-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 1024px) {
+  .training-potential .block-wrapper {
+    justify-content: center;
+  }
+}
+.training-potential .block-wrapper > * {
+  width: 50%;
+}
+@media (max-width: 1024px) {
+  .training-potential .block-wrapper > * {
+    width: 100%;
+    text-align: center;
+  }
+}
+.training-potential .block-wrapper .image-block {
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .training-potential .block-wrapper .image-block {
+    margin-bottom: 2rem;
+  }
+}
+.training-potential .block-wrapper .image-block img {
+  position: relative;
+  z-index: 1;
+}
+.training-potential .block-wrapper .image-block .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transform: scale(2);
+}
+@media (max-width: 1024px) {
+  .training-potential .block-wrapper .image-block .overlay {
+    transform: scale(1);
+  }
+}
+.training-potential .block-wrapper .title {
+  max-width: 500px;
+}
+.training-potential .block-wrapper .title h1 {
+  color: #fff;
+}
+.training-potential .block-wrapper .description {
+  color: #a3a3cc;
+  margin: 20px 0;
+}
+.training-potential .block-wrapper a {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  background-color: #060c21;
+  padding: 12px 30px;
+  border: 3px solid #650aff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+}
+
 .analysis-section img {
   width: 100%;
 }
@@ -281,6 +359,57 @@ footer .copyright p {
   line-height: 1.65;
   font-size: 1rem;
   color: #fff;
+}
+
+.team-section .block-info {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.team-section .block-info .title h1 {
+  color: #fff;
+}
+.team-section .section-padding {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 80px 0;
+  overflow: hidden;
+}
+.team-section .team_slider .owl-item .item {
+  transform: translate3d(0, 0, 0); /* DO NOT REMEMBER WHERE TU PUT THIS, SEARCH FOR 3D ACCELERATION */
+  margin: 50px 0; /* OVERWRITE PLUGIN MARGIN */
+}
+.team-section .team_slider .owl-item .item .team {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  color: #fff;
+  filter: grayscale(100%);
+}
+.team-section .team_slider .owl-item .item .team .image {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.team-section .team_slider .owl-item .item .team .image > img {
+  position: relative;
+  z-index: 2;
+}
+.team-section .team_slider .owl-item .item .team .image .overlay img {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.team-section .team_slider .owl-item.center .item .team {
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
+  filter: grayscale(0%);
 }
 
 .pricing-section {
@@ -420,6 +549,44 @@ footer .copyright p {
   .cta-announcement .cta-content-wrapper h3 {
     margin-top: 5px;
   }
+}
+
+.user-dashboard .personal-details {
+  background: #191924;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 2rem;
+}
+.user-dashboard .personal-details .description {
+  opacity: 0.6;
+}
+.user-dashboard .personal-details .fitness-details .details-wrapper {
+  display: flex;
+  align-items: center;
+}
+.user-dashboard .personal-details .fitness-details .details-wrapper .step-count {
+  text-align: center;
+  padding: 56px 40px;
+  background-color: #4762f1;
+}
+.user-dashboard .personal-details .fitness-details .details-wrapper .diet-details {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.user-dashboard .personal-details .fitness-details .details-wrapper .diet-details > * {
+  width: 50%;
+  padding: 15px;
+}
+.user-dashboard .personal-details .fitness-details .details-wrapper .diet-details .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.user-dashboard .personal-details .fitness-details .details-wrapper .diet-details .carbs,
+.user-dashboard .personal-details .fitness-details .details-wrapper .diet-details .fat {
+  background-color: #1f212a;
 }
 
 /*# sourceMappingURL=style.css.map */

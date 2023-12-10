@@ -2,6 +2,7 @@
 {% block start %}
 
 <link rel="stylesheet" href="/static/css/home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 
 <div class="video-container">
     <video autoplay muted loop id="video-bg">
@@ -74,22 +75,27 @@
 
 <div class="training-potential">
     <div class="container">
-        <div class="image-block">
-
-        </div>
-        <div class="content-block">
-            <div class="subtitle">
-                <p>OUR PROMISE</p>
+        <div class="block-wrapper">
+            <div class="image-block">
+                <img src="/static/images/lift-weight.png" alt="Weight Lifting">
+                <div class="overlay">
+                    <img src="/static/images/overlay.png" alt="Overlay"/>
+                </div>
             </div>
-            <div class="title">
-                <p>Unlock your training potential with a two week risk-free trial</p>
-            </div>
-            <div class="description">
-                <p>We guarantee that our platform will provide a user-friendly experience to help you achieve your
-                    training goals. Sign-up today and receive a 14-day risk free trial.</p>
-            </div>
-            <div class="actions-toolbar">
-                <a href="#" class="primary-button">RISK FREE 14-DAY TRIAL</a>
+            <div class="content-block">
+                <div class="tagline-text">
+                    <p>OUR PROMISE</p>
+                </div>
+                <div class="title">
+                    <h1>Unlock your training potential with a two week risk-free trial</h1>
+                </div>
+                <div class="description">
+                    <p>We guarantee that our platform will provide a user-friendly experience to help you achieve your
+                        training goals. Sign-up today and receive a 14-day risk free trial.</p>
+                </div>
+                <div class="actions-toolbar">
+                    <a href="#" class="primary-button">RISK FREE 14-DAY TRIAL</a>
+                </div>
             </div>
         </div>
     </div>
@@ -148,6 +154,108 @@
                     </div>
                     <div class="accordion-content">
                         <p>Our A.I. analyzes every workout and adapts training accordingly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="team-section">
+    <div class="container">
+        <div class="block-info">
+            <div class="tagline-text">
+                <p>OUR TEAM</p>
+            </div>
+            <div class="title">
+                <h1>The industries’ leading coaches, athletes, sport scientists, and researchers have joined forces</h1>
+            </div>
+        </div>
+        <div class="section-padding">
+            <div class="team_slider owl-carousel">
+                <div class="item">
+                    <div class="team">
+                        <div class="image">
+                            <img src="https://assets-global.website-files.com/635d9f0eb61ccdfa65cb9584/635d9f0eb61ccd0059cb95dc_evoleai_team1.png"
+                                 alt="Team">
+                            <div class="overlay">
+                                <img src="/static/images/team_overlay.png" alt="Team Overlay">
+                            </div>
+                        </div>
+                        <div class="name">
+                            <h2>John Doe</h2>
+                        </div>
+                        <div class="description">
+                            <p>Team description</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team">
+                        <div class="image">
+                            <img src="https://assets-global.website-files.com/635d9f0eb61ccdfa65cb9584/635d9f0eb61ccd209ecb95d1_evoleai_team6.png"
+                                 alt="Team">
+                            <div class="overlay">
+                                <img src="/static/images/team_overlay.png" alt="Team Overlay">
+                            </div>
+                        </div>
+                        <div class="name">
+                            <h2>John Doe</h2>
+                        </div>
+                        <div class="description">
+                            <p>Team description</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team">
+                        <div class="image">
+                            <img src="https://assets-global.website-files.com/635d9f0eb61ccdfa65cb9584/635d9f0eb61ccdf142cb95db_evoleai_team3.png"
+                                 alt="Team">
+                            <div class="overlay">
+                                <img src="/static/images/team_overlay.png" alt="Team Overlay">
+                            </div>
+                        </div>
+                        <div class="name">
+                            <h2>John Doe</h2>
+                        </div>
+                        <div class="description">
+                            <p>Team description</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team">
+                        <div class="image">
+                            <img src="https://assets-global.website-files.com/635d9f0eb61ccdfa65cb9584/635d9f0eb61ccdd70ccb95dd_evoleai_team2.png"
+                                 alt="Team">
+                            <div class="overlay">
+                                <img src="/static/images/team_overlay.png" alt="Team Overlay">
+                            </div>
+                        </div>
+                        <div class="name">
+                            <h2>John Doe</h2>
+                        </div>
+                        <div class="description">
+                            <p>Team description</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team">
+                        <div class="image">
+                            <img src="https://assets-global.website-files.com/635d9f0eb61ccdfa65cb9584/635d9f0eb61ccd0059cb95dc_evoleai_team1.png"
+                                 alt="Team">
+                            <div class="overlay">
+                                <img src="/static/images/team_overlay.png" alt="Team Overlay">
+                            </div>
+                        </div>
+                        <div class="name">
+                            <h2>John Doe</h2>
+                        </div>
+                        <div class="description">
+                            <p>Team description</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -245,4 +353,8 @@
     </div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 {% endblock %}

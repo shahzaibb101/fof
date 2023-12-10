@@ -52,3 +52,30 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+var owl = $('.team_slider').owlCarousel({
+    loop: true,
+    responsiveClass: true,
+    nav: false,
+    dots: true,
+    margin: 0,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    smartSpeed: 400,
+    center: true,
+    responsive: {
+        0: {
+            items: 2,
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 4
+        },
+        1200: {
+            items: 5
+        }
+    }
+});

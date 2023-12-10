@@ -1,0 +1,44 @@
+.user-dashboard {
+  .personal-details {
+    background: #191924;
+    color: $color-1;
+    padding: 20px;
+    margin-bottom: 2rem;
+
+    .description {
+      opacity: 0.6;
+    }
+
+    .fitness-details {
+      .details-wrapper {
+        @include flex-c;
+
+        .step-count {
+          text-align: center;
+          padding: 56px 40px;
+          background-color: #4762f1;
+        }
+
+        .diet-details {
+          @include flex-c;
+          flex-wrap: wrap;
+
+          > * {
+            width: 50%;
+            padding: 15px;
+          }
+
+          .title {
+            @include flex-c-sb;
+            flex-direction: row-reverse;
+          }
+
+          .carbs,
+          .fat {
+            background-color: #1f212a;
+          }
+        }
+      }
+    }
+  }
+}
