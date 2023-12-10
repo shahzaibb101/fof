@@ -1,7 +1,7 @@
 $desktop: 1280px;
 $tablet: 1024px;
 $mobile: 768px;
-
+$md_mobile: 640px;
 
 @mixin breakpoint($point) {
   @if $point == desktop {
@@ -15,6 +15,10 @@ $mobile: 768px;
     }
   } @else if $point == mobile {
     @media (max-width: $mobile) {
+      @content;
+    }
+  } @else if $point == md_mobile {
+    @media (max-width: $md_mobile) {
       @content;
     }
   } @else {

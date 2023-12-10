@@ -1,4 +1,38 @@
 .user-dashboard {
+  @media (max-width: 992px) {
+    margin-top: 110px;
+  }
+
+  .app-header {
+    &.header-shadow {
+      @media (min-width: 992px) {
+        display: none;
+      }
+    }
+  }
+
+  .app-sidebar.sidebar-shadow {
+    @media (max-width: 992px) {
+      margin-top: -40px !important;
+    }
+  }
+
+  .closed-sidebar {
+    .app-sidebar {
+      .app-sidebar__inner {
+        ul {
+          li a {
+            @media (max-width: 1249px) {
+              padding: 0;
+              text-align: center;
+              text-indent: unset;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .personal-details {
     background: #191924;
     color: $color-1;
@@ -12,6 +46,21 @@
     .fitness-details {
       .details-wrapper {
         @include flex-c;
+        @media screen and (max-width: 1333px) and (min-width: 992px) {
+          flex-direction: column;
+        }
+        @include breakpoint(md_mobile) {
+          flex-direction: column;
+        }
+
+        > * {
+          @media screen and (max-width: 1333px) and (min-width: 992px) {
+            width: 100%;
+          }
+          @include breakpoint(md_mobile) {
+            width: 100%;
+          }
+        }
 
         .step-count {
           text-align: center;
@@ -26,6 +75,9 @@
           > * {
             width: 50%;
             padding: 15px;
+            @include breakpoint(md_mobile) {
+              padding: 8px;
+            }
           }
 
           .title {

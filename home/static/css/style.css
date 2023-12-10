@@ -551,6 +551,28 @@ footer .copyright p {
   }
 }
 
+@media (max-width: 992px) {
+  .user-dashboard {
+    margin-top: 110px;
+  }
+}
+@media (min-width: 992px) {
+  .user-dashboard .app-header.header-shadow {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .user-dashboard .app-sidebar.sidebar-shadow {
+    margin-top: -40px !important;
+  }
+}
+@media (max-width: 1249px) {
+  .user-dashboard .closed-sidebar .app-sidebar .app-sidebar__inner ul li a {
+    padding: 0;
+    text-align: center;
+    text-indent: unset;
+  }
+}
 .user-dashboard .personal-details {
   background: #191924;
   color: #fff;
@@ -563,6 +585,26 @@ footer .copyright p {
 .user-dashboard .personal-details .fitness-details .details-wrapper {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 1333px) and (min-width: 992px) {
+  .user-dashboard .personal-details .fitness-details .details-wrapper {
+    flex-direction: column;
+  }
+}
+@media (max-width: 640px) {
+  .user-dashboard .personal-details .fitness-details .details-wrapper {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1333px) and (min-width: 992px) {
+  .user-dashboard .personal-details .fitness-details .details-wrapper > * {
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .user-dashboard .personal-details .fitness-details .details-wrapper > * {
+    width: 100%;
+  }
 }
 .user-dashboard .personal-details .fitness-details .details-wrapper .step-count {
   text-align: center;
@@ -577,6 +619,11 @@ footer .copyright p {
 .user-dashboard .personal-details .fitness-details .details-wrapper .diet-details > * {
   width: 50%;
   padding: 15px;
+}
+@media (max-width: 640px) {
+  .user-dashboard .personal-details .fitness-details .details-wrapper .diet-details > * {
+    padding: 8px;
+  }
 }
 .user-dashboard .personal-details .fitness-details .details-wrapper .diet-details .title {
   display: flex;
