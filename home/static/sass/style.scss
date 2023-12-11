@@ -6,6 +6,7 @@
 
 // Import components
 @import "components/button";
+@import "components/form";
 
 // Import layout
 @import "layout/header";
@@ -14,3 +15,4 @@
 // Import pages
 @import "pages/home";
 @import "pages/user_dashboard";
+@import "pages/account";

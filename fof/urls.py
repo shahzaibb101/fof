@@ -22,5 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name="home"),
     path('user-dashboard/', user_dashboard, name="user_dashboard"),
-    path('cms/', cms, name="cms")
+    path('cms/', cms, name="cms"),
+    path('sign-in/', sign_in, name="sign_in"),
+    path('sign-up/', sign_up, name="sign_up")
 ]
