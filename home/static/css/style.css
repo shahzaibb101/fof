@@ -764,5 +764,43 @@ footer .copyright p {
   top: -100px;
   left: -60px;
 }
+.sign-in [data-tab-content],
+.sign-up [data-tab-content] {
+  display: none;
+}
+.sign-in .active[data-tab-content],
+.sign-up .active[data-tab-content] {
+  display: block;
+}
+.sign-in .tabs,
+.sign-up .tabs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.sign-in .tabs .tab,
+.sign-up .tabs .tab {
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  background-color: #060c21;
+  padding: 12px 30px;
+  border: 3px solid #650aff;
+  width: 50%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  transition: all 0.3s ease;
+}
+.sign-in .tabs .tab.active,
+.sign-up .tabs .tab.active {
+  background-color: #650aff;
+}
 
 /*# sourceMappingURL=style.css.map */
