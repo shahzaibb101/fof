@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% block start %}
+
+<div class="sign-up">
+    <div class="container">
+        <div class="block-wrapper">
+            <div class="content-block">
+                <div class="page-title">
+                    <h1>Create Account</h1>
+                </div>
+                <div class="description">
+                    <p>Level up your fitness journey now with industry leading AI, coaches, athletes, and researchers to
+                        guide you.</p>
+                </div>
+                <div class="tabs">
+                    <div data-tab-target="#user" class="active tab">User</div>
+                    <div data-tab-target="#trainer" class="tab">Trainer</div>
+                </div>
+                <div class="tab-content">
+                    <div id="user" data-tab-content class="active">
+                        <form action="" id="user-form">
+                            <div class="form-group">
+                                <label for="user-name">
+                                    <input type="name" name="user-name" class="form-control" id="user-name"
+                                           placeholder="Enter your name">
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="user-email">
+                                    <input type="email" name="user-email" class="form-control" id="user-email"
+                                           placeholder="Enter your email">
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="user-password">
+                                    <input type="password" name="user-password" class="form-control" id="user-password"
+                                           placeholder="Enter your password">
+                                </label>
+                            </div>
+                            <div class="form-group choice">
+                                <input type="checkbox" name="user-policy" id="user-policy">
+                                <label for="user-policy">I agree to the <a href="#">Terms of Use</a>, <a href="#">Health
+                                    Disclaimer</a>, and
+                                    <a href="#">Privacy Policy</a></label>
+                            </div>
+                            <input type="submit" value="Submit">
+                            <p><span>Already a member?</span><a href="/sign-in">Sign in</a></p>
+                        </form>
+                    </div>
+                    <div id="trainer" data-tab-content>
+                        <form action="" id="trainer-form">
+                            <div class="form-group">
+                                <label for="trainer-name">
+                                    <input type="name" name="trainer-name" class="form-control" id="trainer-name"
+                                           placeholder="Enter your name">
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="trainer-email">
+                                    <input type="email" name="trainer-email" class="form-control" id="trainer-email"
+                                           placeholder="Enter your email">
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="trainer-password">
+                                    <input type="password" name="trainer-password" class="form-control" id="trainer-password"
+                                           placeholder="Enter your password">
+                                </label>
+                            </div>
+                            <div class="form-group choice">
+                                <input type="checkbox" name="trainer-policy" id="trainer-policy">
+                                <label for="trainer-policy">I agree to the <a href="#">Terms of Use</a>, <a href="#">Health
+                                    Disclaimer</a>, and
+                                    <a href="#">Privacy Policy</a></label>
+                            </div>
+                            <input type="submit" value="Submit">
+                            <p><span>Already a member?</span><a href="/sign-in">Sign in</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="image-block">
+                <img src="/static/images/phone.webp" alt="Phone">
+                <div class="overlay">
+                    <img src="/static/images/account-overlay.png" alt="Overlay">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

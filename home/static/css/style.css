@@ -46,6 +46,38 @@ img {
   background-color: rgba(6, 12, 33, 0.72);
 }
 
+.form-control {
+  background-color: transparent;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  width: 100%;
+  min-height: 45px;
+  margin-bottom: 1rem;
+  border: 1px solid hsla(0, 0%, 100%, 0.24);
+  border-radius: 6px;
+  color: #fff;
+}
+.form-control:focus, .form-control:active {
+  background-color: transparent;
+}
+
+.form-group.choice {
+  display: flex;
+}
+.form-group.choice input[type=checkbox] {
+  margin-right: 8px;
+  accent-color: #04e2e7;
+  width: 25px;
+  height: 25px;
+  border-color: #04e2e7;
+  background-color: transparent;
+}
+.form-group label {
+  color: #fff;
+}
+
 footer {
   background-color: #060c21;
   padding: 5rem 0;
@@ -634,6 +666,141 @@ footer .copyright p {
 .user-dashboard .personal-details .fitness-details .details-wrapper .diet-details .carbs,
 .user-dashboard .personal-details .fitness-details .details-wrapper .diet-details .fat {
   background-color: #1f212a;
+}
+
+.sign-in,
+.sign-up {
+  margin: 100px 0;
+}
+.sign-in .block-wrapper,
+.sign-up .block-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .sign-in .block-wrapper,
+  .sign-up .block-wrapper {
+    flex-direction: column;
+  }
+}
+.sign-in .block-wrapper h1,
+.sign-in .block-wrapper .description p,
+.sign-up .block-wrapper h1,
+.sign-up .block-wrapper .description p {
+  color: #fff;
+}
+.sign-in .block-wrapper .description p,
+.sign-up .block-wrapper .description p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 175%;
+  color: hsla(0, 0%, 100%, 0.72);
+}
+.sign-in .block-wrapper label,
+.sign-up .block-wrapper label {
+  display: block;
+}
+.sign-in .block-wrapper .content-block,
+.sign-up .block-wrapper .content-block {
+  width: 30%;
+}
+@media (max-width: 768px) {
+  .sign-in .block-wrapper .content-block,
+  .sign-up .block-wrapper .content-block {
+    width: 100%;
+  }
+}
+.sign-in .block-wrapper .content-block form p span,
+.sign-up .block-wrapper .content-block form p span {
+  color: #fff;
+  margin-right: 5px;
+}
+.sign-in .block-wrapper .content-block form a,
+.sign-up .block-wrapper .content-block form a {
+  display: inline-block;
+  color: #04e2e7 !important;
+  text-decoration: none;
+}
+.sign-in .block-wrapper .content-block form input[type=submit],
+.sign-up .block-wrapper .content-block form input[type=submit] {
+  margin-bottom: 1rem;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 2px solid #3068ff;
+  border-radius: 6px;
+  font-family: Biennale, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  margin-top: 20px;
+}
+.sign-in .block-wrapper .image-block,
+.sign-up .block-wrapper .image-block {
+  position: relative;
+  width: 55%;
+}
+@media (max-width: 768px) {
+  .sign-in .block-wrapper .image-block,
+  .sign-up .block-wrapper .image-block {
+    width: 100%;
+  }
+}
+.sign-in .block-wrapper .image-block > img,
+.sign-up .block-wrapper .image-block > img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+.sign-in .block-wrapper .image-block .overlay img,
+.sign-up .block-wrapper .image-block .overlay img {
+  z-index: 1;
+  position: absolute;
+  top: -100px;
+  left: -60px;
+}
+.sign-in [data-tab-content],
+.sign-up [data-tab-content] {
+  display: none;
+}
+.sign-in .active[data-tab-content],
+.sign-up .active[data-tab-content] {
+  display: block;
+}
+.sign-in .tabs,
+.sign-up .tabs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.sign-in .tabs .tab,
+.sign-up .tabs .tab {
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  background-color: #060c21;
+  padding: 12px 30px;
+  border: 3px solid #650aff;
+  width: 50%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  transition: all 0.3s ease;
+}
+.sign-in .tabs .tab.active,
+.sign-up .tabs .tab.active {
+  background-color: #650aff;
 }
 
 /*# sourceMappingURL=style.css.map */
